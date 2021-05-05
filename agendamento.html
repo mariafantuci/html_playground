@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento para doação</title>
+</head>
+<body>
+    <form action="./agendamento.html">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required><br>
+        <label for="sexo"></label>
+        Feminino <input type="radio" id="sexo"><br>
+        masculino <input type="radio" id="sexo"><br>
+        <label for="idade">Idade</label>
+        <input type="number"name="idade" id="idade" required><br>
+        <label for="dia">Dia</label>
+        <input type="text" name="dia" id="dia" required><br>
+        <label for="horario">Horario</label>
+        <input type="time" name="horario" id-="horario" required><br>
+        <label for="cidade">Cidade</label>
+        <select name="cidade" id="cidade">
+            <option value="Hemocentro">Hemocentro</option>
+            <option value="HR">HR</option>
+        </select><br>
+        <label for="weekdays">Dia da Semanda</label>
+        <input list="weekdays" name="weekday" id="weekday">
+        <datalist id="weekdays">
+            <option value="domingo">domingo</option>
+            <option value="segunda">segunda</option>
+            <option value="terça">terça</option>
+            <option value="quarta">quarta</option>
+            <option value="quinta">quinta</option>
+            <option value="sexta">sexta</option>
+            <option value="sabado">sabado</option>
+            <option value="domingo">domingo</option>
+        </datalist><br>
+        <button type="submit">Agendar</button>
+    </form>
+</body>
+</html>
